@@ -1,4 +1,4 @@
-package com.github.ashikuzzaman.javaapichecks.threads;
+package com.github.ashikuzzaman.javaapichecks.collections;
 
 /** 
 Write a Singly Likned Linear List of your own. Likned List has 
@@ -8,10 +8,10 @@ Write a Singly Likned Linear List of your own. Likned List has
 @author ashik
  
 to compile: javac -d . LinkedNode.java
-to run: java com.github.ashikuzzaman.javaapichecks.threads.LinkedNode
-or,     java com.github.ashikuzzaman.javaapichecks.threads.LinkedNode sort
-or,     java com.github.ashikuzzaman.javaapichecks.threads.LinkedNode find
-or,     java com.github.ashikuzzaman.javaapichecks.threads.LinkedNode remove
+to run: java com.github.ashikuzzaman.javaapichecks.collections.LinkedNode
+or,     java com.github.ashikuzzaman.javaapichecks.collections.LinkedNode sort
+or,     java com.github.ashikuzzaman.javaapichecks.collections.LinkedNode find
+or,     java com.github.ashikuzzaman.javaapichecks.collections.LinkedNode remove
 */
 
 public class LinkedNode {
@@ -93,6 +93,7 @@ public class LinkedNode {
     }
 
     public LinkedNode remove(LinkedNode head, LinkedNode target) {
+        System.out.println("While removing, head.data = " + head.data + " and target.data = " + target.data);
         while(head != null && head == target) {
             head = head.next;
         }
